@@ -1,5 +1,5 @@
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBRampUp", "DBRampUp Console\DBRampUp.csproj", "{A76679BD-E29F-4C88-8D86-C16C8341F8EE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBRampUp.Driver", "DBRampUp.Drivers\DBRampUp.Driver.csproj", "{94FAA2E8-7403-480D-ACCA-E76FE8B9474E}"
