@@ -114,10 +114,30 @@ namespace DBRampUp
         /// </summary>
         internal static readonly object EventBuildTestData = new object();
 
+		/// <summary>
+		/// Update Sql event.
+		/// </summary>
+		internal static readonly object EventUpdateSql = new object();
+
         /// <summary>
         /// Fired after build test data
         /// </summary>
         internal static readonly object EventPostBuildTestData = new object();
+
+		/// <summary>
+		/// Fired before build test data
+		/// </summary>
+		internal static readonly object EventPreExecuteUpdateSql = new object();
+
+		/// <summary>
+		/// Build test data event
+		/// </summary>
+		internal static readonly object EventExecuteUpdateSql = new object();
+
+		/// <summary>
+		/// Fired after build test data
+		/// </summary>
+		internal static readonly object EventPostExecuteUpdateSql = new object();
 
         /// <summary>
         /// Fired before finalize
@@ -291,6 +311,15 @@ namespace DBRampUp
             add { _events.AddHandler(EventBuildTestData, value); }
             remove { _events.RemoveHandler(EventBuildTestData, value); }
         }
+
+		/// <summary>
+		/// Will update the sql in a specific schema folder.
+		/// </summary>
+		public event DBRampUpEventHandler UpdateSql
+		{
+			add { _events.AddHandler(EventUpdateSql, value); }
+			remove { _events.RemoveHandler(EventUpdateSql, value); }
+		}
 
         /// <summary>
         /// Fired after build test data event

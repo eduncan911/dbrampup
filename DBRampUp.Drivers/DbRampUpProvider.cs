@@ -146,6 +146,16 @@ END
             get { return _sqlPath; }
             set { _sqlPath = value; }
         }
+
+		/// <summary>
+		/// Setting this value will cause all the sql to be executed after test data.
+		/// </summary>
+		public virtual string SchemaSqlPath
+		{
+			get;
+			set;
+		}
+
         protected Dictionary<string, string> ConnectionStringValues;
         protected Dictionary<string, string> GetConnectionStringValues()
         {
@@ -200,6 +210,13 @@ END
             context.EventHub.ExecuteEvent(DBRampUpEventHub.EventPostBuildTestData, context);
         }
 
+		private void OnExecuteSqlUpdate()
+		{
+			context.EventHub.ExecuteEvent(DBRampUpEventHub.EventPreExecuteUpdateSql, context);
+			context.EventHub.ExecuteEvent(DBRampUpEventHub.EventExecuteUpdateSql, context);
+			context.EventHub.ExecuteEvent(DBRampUpEventHub.EventPostExecuteUpdateSql, context);
+		}
+
         protected void OnCustomSiteSettings()
         {
             context.EventHub.ExecuteEvent(DBRampUpEventHub.EventPreCustomSiteSettings, context);
@@ -237,10 +254,15 @@ END
             context.EventHub.ExecuteEvent(DBRampUpEventHub.EventPostPreserveContent, context);
         }
 
-        protected void EventHub_BuildTestData(DBRampUpContext context)
+		protected void EventHub_BuildTestData(DBRampUpContext context)
         {
             BuildTestData();
         }
+		
+		protected void EventHub_UpdateSql(DBRampUpContext context)
+		{
+			UpdateSql();
+		}
 
         protected void EventHub_CustomSiteSettings(DBRampUpContext context)
         {
@@ -311,7 +333,7 @@ END
 
                 if (type == null)
                 {
-                    WriteLine(String.Format("A DBRampUpModule could not be loaded. The type {0} does not exist", typeName));
+                    WriteLine(String.Format("A DBRampUpModule could not be loaded. The type {0} does not exist", moduleConfig.TypeName));
                 }
                 else
                 {
@@ -359,6 +381,7 @@ END
                 context.EventHub.RestoreContent += new DBRampUpEventHandler(EventHub_RestoreContent);
                 context.EventHub.CustomSiteSettings += new DBRampUpEventHandler(EventHub_CustomSiteSettings);
                 context.EventHub.BuildTestData += new DBRampUpEventHandler(EventHub_BuildTestData);
+				context.EventHub.UpdateSql += new DBRampUpEventHandler(EventHub_UpdateSql);
 
                 // Update the logging state
                 DBRampUpLogging.LogToFile = context.SetupArgs.Log;
@@ -417,6 +440,8 @@ END
                     WriteLine("Test data built.");
                 }
 
+				OnExecuteSqlUpdate();
+
                 // Execute the pre-finalize event
                 context.EventHub.ExecuteEvent(DBRampUpEventHub.EventPreFinalize, context);
 
@@ -440,6 +465,9 @@ END
 
 			return 0;
         }
+
+		
+
 
         /// <summary>
         /// Initializes provider
@@ -472,6 +500,14 @@ END
                 return Path.Combine(ProjectPath, SqlPath);
             }
         }
+
+		public string FullSchemaSqlPath
+		{
+			get
+			{
+				return Path.Combine(ProjectPath, this.SchemaSqlPath);
+			}
+		}
         /// <summary>
         /// Runs database install scripts.  Default behavior runs all sql files in the folder
         /// </summary>
@@ -480,7 +516,11 @@ END
             ExecuteFilesInFolder(FullSqlPath);
         }
 
-
+		protected virtual void UpdateSql()
+		{
+			if (false == String.IsNullOrEmpty(this.SchemaSqlPath))
+				ExecuteFilesInFolder(FullSchemaSqlPath);
+		}
 
         /// <summary>
         /// Put code here to get rid of the existing DB.  Default behavior is to drop all objects.
