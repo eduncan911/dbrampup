@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Website", "Website\Website.csproj", "{ECFBF36E-CD62-4D05-B884-6B3CF79050AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataLayer", "DataLayer\DataLayer.csproj", "{2DC53644-9BE1-420F-A09B-C551980BC4FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.DBRampUp", "Sample.DBRampUp\Sample.DBRampUp.csproj", "{34786CD3-D368-4323-B0AA-1191FF336911}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ECFBF36E-CD62-4D05-B884-6B3CF79050AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECFBF36E-CD62-4D05-B884-6B3CF79050AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECFBF36E-CD62-4D05-B884-6B3CF79050AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECFBF36E-CD62-4D05-B884-6B3CF79050AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DC53644-9BE1-420F-A09B-C551980BC4FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DC53644-9BE1-420F-A09B-C551980BC4FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DC53644-9BE1-420F-A09B-C551980BC4FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DC53644-9BE1-420F-A09B-C551980BC4FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34786CD3-D368-4323-B0AA-1191FF336911}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34786CD3-D368-4323-B0AA-1191FF336911}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34786CD3-D368-4323-B0AA-1191FF336911}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34786CD3-D368-4323-B0AA-1191FF336911}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
