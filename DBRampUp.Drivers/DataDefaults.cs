@@ -81,6 +81,114 @@ namespace DBRampUp
                                           + "Curabitur in lorem Praesent urna Ut magna tellus vehicula a consequat acondimentum at "
                                           + "lacus";
 
+		public static string[] FirstNames = new string[]{
+        "Michael","Christopher","Joshua","Matthew","Daniel","David","Andrew","Justin","Ryan","Robert","James","Nicholas","Joseph","John","Jonathan","Kevin","Kyle","Brandon","William","Eric","Jose","Steven","Jacob","Brian","Tyler","Zachary","Aaron","Alexander","Adam","Thomas","Richard","Timothy","Benjamin","Jason","Jeffrey","Sean","Jordan","Jeremy","Travis","Cody","Nathan","Mark","Jesse","Charles","Juan","Samuel","Patrick","Dustin","Scott","Stephen","Paul","Bryan","Luis","Derek","Austin","Kenneth","Carlos","Gregory","Alex","Cameron","Jared","Jesus","Bradley","Christian","Corey","Victor","Cory","Miguel","Tylor","Edward","Francisco","Trevor","Adrian","Jorge","Ian","Antonio","Shawn","Ricardo","Vincent","Edgar","Erik","Peter","Shane","Evan","Chad","Alejandro","Brett","Gabriel","Eduardo","Raymond","Phillip","Mario","Marcus","Manuel","George","Martin","Spencer","Garrett","Casey",
+        "Jessica","Ashley","Amanda","Brittany","Sarrah","Jennifer","Stephanie","Samantha","Elizabeth","Megan","Nicole","Lauren","Melissa","Amber","Michelle","Heather","Christina","Rachel","Tiffany","Kayla","Danielle","Vanessa","Rebecca","Laura","Courtney","Katherine","Chelsea","Kimberly","Sara","Kelsey","Andrea","Alyssa","Crystal","Maria","Amy","Alexandra","Erica","Jasmine","Natalie","Hanna","Angela","Kelly","Brittney","Mary","Cassandra","Erin","Victoria","Jacqueline","Jamie","Lindsey","Alicia","Lisa","Katie","Allison","Kristen","Cynthia","Anna","Caitlin","Monica","Christine","Diana","Erika","Veronica","Kathryn","Whitney","Brianna","Nancy","Shannon","Kristina","Lindsay","Kristin","Marissa","Patricia","Brooke","Brenda","Angelica","Morgan","Adriana","April","Ana","Taylor","Tara","Jordan","Jenna","Catherine","Alexis","Karen","Melanie","Natasha","Sandra","Julie","Bianca","Krystal","Mayra","Holly","Alexandria","Monique","Leslie","Katelyn"     
+        };
+
+		public static string[] LastNames = new string[] {
+               "Smith",
+        "Johnson",
+        "Williams",
+        "Jones",
+        "Brown",
+        "Davis",
+        "Miller",
+        "Wilson",
+        "Moore",
+        "Taylor",
+        "Anderson",
+        "Thomas",
+        "Jackson",
+        "White",
+        "Harris",
+        "Martin",
+        "Thompson",
+        "Garcia",
+        "Martinez",
+        "Robinson",
+        "Clark",
+        "Rodriguez",
+        "Lewis",
+        "Lee",
+        "Walker",
+        "Hall",
+        "Allen",
+        "Young",
+        "Hernandez",
+        "King",
+        "Wright",
+        "Lopez",
+        "Hill",
+        "Scott",
+        "Green",
+        "Adams",
+        "Baker",
+        "Gonzalez",
+        "Nelson",
+        "Carter",
+        "Mitchell",
+        "Perez",
+        "Roberts",
+        "Turner",
+        "Phillips",
+        "Campbell",
+        "Parker",
+        "Evans",
+        "Edwards",
+        "Collins",
+        "Stewart",
+        "Sanchez",
+        "Morris",
+        "Rogers",
+        "Reed",
+        "Cook",
+        "Morgan",
+        "Bell",
+        "Murphy",
+        "Bailey",
+        "Rivera",
+        "Cooper",
+        "Richardson",
+        "Cox",
+        "Howard",
+        "Ward",
+        "Torres",
+        "Peterson",
+        "Gray",
+        "Ramirez",
+        "James",
+        "Watson",
+        "Brooks",
+        "Kelly",
+        "Sanders",
+        "Price",
+        "Bennett",
+        "Wood",
+        "Barnes",
+        "Ross",
+        "Henderson",
+        "Coleman",
+        "Jenkins",
+        "Perry",
+        "Powell",
+        "Long",
+        "Patterson",
+        "Hughes",
+        "Flores",
+        "Washington",
+        "Butler",
+        "Simmons",
+        "Foster",
+        "Gonzales",
+        "Bryant",
+        "Alexander",
+        "Russell",
+        "Griffin",
+        "Diaz",
+        "Hayes"
+
+        };
 
         public static string[] EnglishText = new string[] {"&", ":-)", "a","a","a","a","ability","able","about","about","above","above","absence","absolutely","academic","accept","access","accident","accompany",
 "according to","account","account","achieve","achievement","acid","acquire","across","act","act","action","active","activity","actual","actually","add","addition","additional","address","address","administration","admit","adopt",
@@ -93,6 +201,25 @@ namespace DBRampUp
 "other","other","other","otherwise","ought","our","ourselves","out","outcome","output","outside","outside","over","over","overall","own","own","owner","package","page","pain","paint","painting","pair","panel","paper","parent","park","parliament","part","particular","particularly","partly","partner","party","pass","passage","past","past","past","path","patient","pattern","pay","pay","payment","peace","pension","people","per","percent","perfect","perform","performance","perhaps","period","permanent","person","personal","persuade","phase","phone","photograph","physical","pick","picture","piece","place","place","plan","plan","planning","plant","plastic","plate","play","play","player","please","pleasure","plenty","plus","pocket","point","point","police","policy","political","politics","pool","poor","popular","population","position","positive","possibility","possible","possibly","post","potential","potential","pound","power","powerful","practical","practice","prefer","prepare","presence","present","present","present","president","press","press","pressure","pretty","prevent","previous","previously","price","primary","prime","principle","priority","prison","prisoner","private","probably","problem","procedure","process","produce","product","production","professional","profit","program","programme","progress","project","promise","promote","proper","properly","property","proportion","propose","proposal","prospect","protect","protection","prove","provide","provided","provision","pub","public","public","publication","publish","pull","pupil","purpose","push","put","quality","quarter","question","question","quick","quickly","quiet","quite","race","radio","railway","rain","raise","range","rapidly","rare","rate","rather","reach","reaction","read","reader","reading","ready","real","realise","reality","realize","really","reason","reasonable","recall","receive","recent","recently","recognise","recognition","recognize","recommend","record","record","recover","red","reduce","reduction","refer","reference","reflect","reform","refuse","regard","region","regional","regular","regulation","reject","relate","relation","relationship","relative","relatively","release","release","relevant","relief","religion","religious","rely","remain","remember","remind","remove","repeat","replace","reply","report","report","represent","representation","representative","request","require","requirement","research","resource","respect","respond","response","responsibility","responsible","rest","rest","restaurant","result","result","retain","return","return","reveal","revenue","review","revolution","rich","ride","right","right","right","ring","ring","rise","rise","risk","river","road","rock","role","roll","roof","room","round","round","route","row","royal","rule","run","run","rural","safe","safety","sale","same","sample","satisfy","save","say","scale","scene","scheme","school","science","scientific","scientist","score","screen","sea","search","search","season","seat","second","secondary","secretary","section","sector","secure","security","see","seek","seem","select","selection","sell","send","senior","sense","sentence","separate","separate","sequence","series","serious","seriously","servant","serve","service","session","set","set","settle","settlement","several","severe","sex","sexual","shake","shall","shape","share","share","she","sheet","ship","shoe","shoot","shop",
 "short","shot","should","shoulder","shout","show","show","shut","side","sight","sign","sign","signal","significance","significant","silence","similar","simple","simply","since","since","sing","single","sir","sister","sit","site","situation","size","skill","skin","sky","sleep","slightly","slip","slow","slowly","small","smile","smile","so","so","social","society","soft","software","soil","soldier","solicitor","solution","some","somebody","someone","something","sometimes","somewhat","somewhere","son","song","soon","sorry","sort","sound","sound","source","south","southern","space","speak","speaker","special","species","specific","speech","speed","spend","spirit","sport","spot","spread","spring","staff","stage","stand","standard","standard","star","star","start","start","state","state","statement","station","status","stay","steal","step","step","stick","still","stock","stone","stop","store","story","straight","strange","strategy","street","strength","strike","strike","strong","strongly","structure","student","studio","study","study","stuff","style","subject","substantial","succeed","success","successful","such","suddenly","suffer","sufficient","suggest","suggestion","suitable","sum","summer","sun","supply","supply","support","support","suppose","sure","surely","surface","surprise","surround","survey","survive","switch","system","table","take","talk","talk","tall","tape","target","task","tax","tea","teach","teacher","teaching","team","tear","technical","technique","technology","telephone","television","tell","temperature","tend","term","terms","terrible","test","test","text","than","thank","thanks","that","that","the","the","the","the","the","theatre","their","them","theme","themselves","then","theory","there","there","therefore","these","they","thin","thing","think","this","those","though","though","thought","threat","threaten","through","through","throughout","throw","thus","ticket","time","tiny","title","to","to","to","today","together","tomorrow","tone","tonight","too","tool","tooth","top","top","total","total","totally","touch","touch","tour","towards","town","track","trade","tradition","traditional","traffic","train","train","training","transfer","transfer","transport","travel","treat","treatment","treaty","tree","trend","trial","trip","troop","trouble","TRUE","trust","truth","try","turn","turn","twice","type","typical","unable","under","under","understand","understanding","undertake","unemployment","unfortunately","union","unit","united","university","unless","unlikely","until","until","up","up","upon","upper","urban","us","use","use","used","used","useful","user","usual","usually","value","variation","variety","various","vary","vast","vehicle","version","very","very","via","victim","victory","video","view","village","violence","vision","visit","visit","visitor","vital","voice","volume","vote","vote","wage","wait","walk","walk","wall","want","war","warm","warn","wash","watch","water","wave","way","we","weak","weapon","wear","weather","week","weekend","weight","welcome","welfare","well","well","west","western","what","whatever","when","when","where","where","whereas","whether","which","while","while","whilst","white","who","whole","whole","whom","whose","why","wide","widely","wife","wild","will","will","win","wind","window","wine","wing","winner","winter","wish","with","withdraw","within","without","woman","wonder","wonderful","wood","word","work","work","worker","working","works","world","worry","worth","would","write","writer","writing","wrong","yard","yeah","year","yes","yesterday","yet","you","young","your","yourself","youth	"};
         #endregion strings
+
+		public static string GetFirstName()
+		{
+			return FirstNames[new Random().Next(0, FirstNames.Length - 1)];
+		}
+
+		public static string GetLastName()
+		{
+			return LastNames[new Random().Next(0, LastNames.Length - 1)];
+		}
+
+		/// <summary>
+		/// Will get a First Last.
+		/// </summary>
+		/// <returns></returns>
+		public static string GetFullName()
+		{
+			return GetFirstName() + " " + GetLastName();
+		}
 
         public static string GetString(Int32 minLength, Int32 maxLength, bool numericOnly, Int32 maxValue, bool useSpaces)
         {
@@ -113,6 +240,8 @@ namespace DBRampUp
                     valueOutput.AppendFormat("{0}{1}", BUNCH_OF_WORDS[rndNum], useSpaces ? " " : string.Empty);
                     //if (rnd.Next(0, 100) == 0) valueOutput.Append("</p><p>");
                 }
+				if (valueOutput.Length > max)
+					return valueOutput.ToString().Substring(0, max);
                 return valueOutput.ToString();
             }
             else
@@ -188,14 +317,24 @@ namespace DBRampUp
         {
             return GetInt(-1, -1);
         }
-        public static double GetDecimal()
+        public static decimal GetDecimal(int min, int max)
         {
             System.Threading.Thread.Sleep(1);
             Random rndNum = new Random();
             Random rndLeft = new Random();
 
-            return (double)(rndLeft.Next() + rndNum.NextDouble());
+            return (decimal)(rndLeft.Next(min, max - 1) + rndNum.NextDouble());
         }
+
+		public static decimal GetPrice(int min, int max)
+		{
+			System.Threading.Thread.Sleep(1);
+			Random rndNum = new Random();
+			Random rndLeft = new Random();
+
+			var d = (decimal)(rndLeft.Next(min, max - 1) + rndNum.NextDouble());
+			return Decimal.Parse(d.ToString("#.##"));
+		}
         public static DateTime GetDateTime()
         {
             System.Threading.Thread.Sleep(1);
@@ -234,8 +373,12 @@ namespace DBRampUp
         }
         public static string GetEmail()
         {
-            return GetString(15, false, false) + "@" + GetString(10, false, false) + ".com";
+			if (new Random().Next(0,1) == 0 )
+				return GetFirstName() + "@" + GetString(10, false, false) + ".com";
+			else
+				return GetFirstName() + "." + GetLastName() + "@" + GetString(10, false, false) + ".com";
         }
+
         public static string GetURL()
         {
             return "http://www." + GetString(15) + ".com";
@@ -244,6 +387,7 @@ namespace DBRampUp
         {
             return GetAddress(false);
         }
+
         public static string GetAddress(bool optional)
         {
             string returnValue = string.Empty;
