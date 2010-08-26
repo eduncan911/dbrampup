@@ -333,7 +333,7 @@ END
 
                 if (type == null)
                 {
-                    WriteLine(String.Format("A DBRampUpModule could not be loaded. The type {0} does not exist", moduleConfig.TypeName));
+					throw new ApplicationException(String.Format("A DBRampUpModule could not be loaded. The type {0} does not exist", moduleConfig.TypeName));
                 }
                 else
                 {
