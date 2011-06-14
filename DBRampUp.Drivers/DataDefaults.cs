@@ -204,12 +204,12 @@ namespace DBRampUp
 
 		public static string GetFirstName()
 		{
-			return FirstNames[new Random().Next(0, FirstNames.Length - 1)];
+			return FirstNames[rnd.Next(0, FirstNames.Length - 1)];
 		}
 
 		public static string GetLastName()
 		{
-			return LastNames[new Random().Next(0, LastNames.Length - 1)];
+			return LastNames[rnd.Next(0, LastNames.Length - 1)];
 		}
 
 		/// <summary>
@@ -223,14 +223,9 @@ namespace DBRampUp
 
         public static string GetString(Int32 minLength, Int32 maxLength, bool numericOnly, Int32 maxValue, bool useSpaces)
         {
-            
-
-
-            System.Threading.Thread.Sleep(30);
             StringBuilder valueOutput = new StringBuilder();
-            Random rnd = new Random();
 
-            if (!numericOnly)
+			if (!numericOnly)
             {
                 int max = rnd.Next(minLength, maxLength);
                 int rndNum = 0;
@@ -296,8 +291,7 @@ namespace DBRampUp
         {
             Int32 returnValue;
 
-            System.Threading.Thread.Sleep(1);
-            Random rndNum = new Random();
+            Random rndNum = rnd;
 
             if (maxValue < 0)
             {
@@ -319,32 +313,28 @@ namespace DBRampUp
         }
         public static decimal GetDecimal(int min, int max)
         {
-            System.Threading.Thread.Sleep(1);
-            Random rndNum = new Random();
-            Random rndLeft = new Random();
+            Random rndNum = rnd;
+            Random rndLeft = rnd;
 
             return (decimal)(rndLeft.Next(min, max - 1) + rndNum.NextDouble());
         }
 
 		public static decimal GetPrice(int min, int max)
 		{
-			System.Threading.Thread.Sleep(1);
-			Random rndNum = new Random();
-			Random rndLeft = new Random();
+			Random rndNum = rnd;
+			Random rndLeft = rnd;
 
 			var d = (decimal)(rndLeft.Next(min, max - 1) + rndNum.NextDouble());
 			return Decimal.Parse(d.ToString("#.##"));
 		}
         public static DateTime GetDateTime()
         {
-            System.Threading.Thread.Sleep(1);
-            Random rndNum = new Random();
+            Random rndNum = rnd;
             return DateTime.Now.AddMonths(rndNum.Next(-100, 0)).AddMinutes((double)rndNum.Next(-12000, 12000));
         }
         public static Decimal GetDateDecimal()
         {
-            System.Threading.Thread.Sleep(1);
-            Random rndNum = new Random();
+            Random rndNum = rnd;
             DateTime currDate = DateTime.Now.AddMonths(rndNum.Next(-100, 0)).AddMinutes((double)rndNum.Next(-12000, 12000));
             string dateNum = currDate.ToString("yyyyMMdd");
             return Convert.ToDecimal(dateNum);
@@ -359,8 +349,7 @@ namespace DBRampUp
 
             boolReturn = false;
 
-            System.Threading.Thread.Sleep(1);
-            Random rndNum = new Random();
+            Random rndNum = rnd;
             if (rndNum.Next(1, 100) <= 50)
             {
                 boolReturn = true;
@@ -373,7 +362,7 @@ namespace DBRampUp
         }
         public static string GetEmail()
         {
-			if (new Random().Next(0,1) == 0 )
+			if (rnd.Next(0,1) == 0 )
 				return GetFirstName() + "@" + GetString(10, false, false) + ".com";
 			else
 				return GetFirstName() + "." + GetLastName() + "@" + GetString(10, false, false) + ".com";
@@ -392,8 +381,7 @@ namespace DBRampUp
         {
             string returnValue = string.Empty;
 
-            System.Threading.Thread.Sleep(3);
-            Random rndNum = new Random();
+            Random rndNum = rnd;
 
             // if the address is optional then only
             // return a value 20% of the time
